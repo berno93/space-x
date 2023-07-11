@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-function InfoSpaceX() {
+function Home() {
     return (
         <div className="App">
-            InfoSpaceX component
+            <h1>Home page</h1>
         </div>
     );
 }
 
-export default InfoSpaceX;
+export default Home;

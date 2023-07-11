@@ -1,20 +1,23 @@
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
-import Main from '../pages/Main'
-import About from '../pages/About'
-import NoMatch from './NoMatch'
-import Navigation from '../layout/Navigation'
- 
+import React from 'react';
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
+import HistorySpaceX from '../components/HistorySpaceX'
+import InfoSpaceX from '../components/InfoSpaceX'
+import MembersDragon from '../components/MembersDragon'
+import VersionFuseeSpaceX from '../components/VersionFuseeSpaceX'
+import Home from '../pages/Home';
+
 const Routeur = () => {
     return (
         <BrowserRouter>
-            <Navigation />
-            <Switch>
-                <Route exact path='/' component={Main} />
-                <Route path='/about' component={About} />
-                <Route component={NoMatch} />
-            </Switch>
+            <Routes>
+                <Route exact path='/' component={Home} />
+                <Route path='/history' component={HistorySpaceX} />
+                <Route exact path='/info' component={InfoSpaceX} />
+                <Route path='/members' component={MembersDragon} />
+                <Route path='/version' component={VersionFuseeSpaceX} />
+            </Routes>
         </BrowserRouter>
     )
 }
- 
+
 export default Routeur
