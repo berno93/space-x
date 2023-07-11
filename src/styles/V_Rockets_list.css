@@ -1,0 +1,29 @@
+.conteiner.div-rocket {
+  width: max-content;
+  display: inline-block;
+  margin: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+  background-color: white;
+}
+
+.img_rocket {
+  width: 480px;
+  height: 360px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+body{
+  background-color: rgba(0, 0, 0, 0.5);
+}

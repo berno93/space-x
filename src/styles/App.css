@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  font-family: 'Abel', sans-serif;
+}
+
+header {
+  margin-bottom: 30px;
+  position: fixed;
+  width: -webkit-fill-available;
+}
+
+h1{
+  text-transform:uppercase;
+}
+
