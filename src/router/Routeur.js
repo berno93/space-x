@@ -1,20 +1,19 @@
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
-import Main from '../pages/Main'
-import About from '../pages/About'
-import NoMatch from './NoMatch'
-import Navigation from '../layout/Navigation'
- 
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
+import NoMatch from './NoMatch';
+import Navigation from '../layout/Navigation';
+
 const Routeur = () => {
-    return (
-        <BrowserRouter>
-            <Navigation />
-            <Switch>
-                <Route exact path='/' component={Main} />
-                <Route path='/about' component={About} />
-                <Route component={NoMatch} />
-            </Switch>
-        </BrowserRouter>
-    )
-}
- 
-export default Routeur
+  return (
+    <BrowserRouter>
+      <Navigation>
+        <Routes>
+          {/* <Route exact path="/" component={} /> */}
+          {/* <Route path="/about" component={About} /> */}
+          <Route component={NoMatch} />
+        </Routes>
+      </Navigation>
+    </BrowserRouter>
+  );
+};
+
+export default Routeur;
