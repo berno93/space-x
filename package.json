@@ -15,7 +15,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix",
+    "format": "prettier --write . --config ./.prettierrc",
+    "prepare": "husky install",
+    "pre-commit": "eslint ./src/**/*.{js,jsx} --fix && prettier --write . --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +38,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0"
   }
 }
