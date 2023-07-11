@@ -5,10 +5,16 @@ const Navigation = ({ children }) => {
   return (
     <>
       <header>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ width: "100%", height: "80px" }}>
+        <nav
+          className="navbar navbar-expand-lg bg-body-tertiary"
+          style={{ width: '100%', height: '80px' }}
+        >
           <div className="container-fluid">
-            <Link to="/" className="navbar-brand" >
-              <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/spacex_logo_icon_144865.png" style={{ width: "80px", }}></img>
+            <Link to="/" className="navbar-brand">
+              <img
+                src="https://cdn.icon-icons.com/icons2/2389/PNG/512/spacex_logo_icon_144865.png"
+                style={{ width: '80px' }}
+              ></img>
             </Link>
             <button
               className="navbar-toggler"
