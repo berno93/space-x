@@ -45,16 +45,48 @@ function RocketDetails() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-          <img src={rocket.flickr_images[0] || rocket.flickr_images[1] || rocket.flickr_images[2] || rocket.flickr_images[3] } className="img-rocket-details"></img>
+            <img
+              src={
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3]
+              }
+              className="img-rocket-details"
+            ></img>
           </div>
           <div className="carousel-item">
-          <img src={rocket.flickr_images[1] || rocket.flickr_images[2] || rocket.flickr_images[3] || rocket.flickr_images[0]} className="img-rocket-details"></img>
+            <img
+              src={
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0]
+              }
+              className="img-rocket-details"
+            ></img>
           </div>
           <div className="carousel-item">
-          <img src={rocket.flickr_images[2] || rocket.flickr_images[3] || rocket.flickr_images[0] || rocket.flickr_images[1] } className="img-rocket-details"></img>
+            <img
+              src={
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1]
+              }
+              className="img-rocket-details"
+            ></img>
           </div>
           <div className="carousel-item">
-          <img src={rocket.flickr_images[3] || rocket.flickr_images[0] || rocket.flickr_images[1] || rocket.flickr_images[2] } className="img-rocket-details"></img>
+            <img
+              src={
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2]
+              }
+              className="img-rocket-details"
+            ></img>
           </div>
         </div>
         <button

@@ -13,8 +13,7 @@ const Routeur = () => {
     <BrowserRouter>
       <Navigation>
         <Routes>
-          <Route path="/" element={<InfoSpaceX
- />} />
+          <Route path="/" element={<InfoSpaceX />} />
           <Route path="/rockets" element={<Rocket />} />
           <Route path="/rockets/:id" element={<RocketDetails />} />
           {/* <Route path="/about" component={About} /> */}
