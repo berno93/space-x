@@ -8,10 +8,14 @@ function History() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api.spacexdata.com/v4/history');
-        const sortedData = response.data.sort((a, b) => new Date(b.event_date_utc) - new Date(a.event_date_utc));
+        const response = await axios.get(
+          'https://api.spacexdata.com/v4/history',
+        );
+        const sortedData = response.data.sort(
+          (a, b) => new Date(b.event_date_utc) - new Date(a.event_date_utc),
+        );
         setData(sortedData);
-        console.log("response.history ====> ", response.data);
+        console.log('response.history ====> ', response.data);
       } catch (error) {
         console.error(error);
       }
@@ -20,7 +24,7 @@ function History() {
   }, []);
 
   return (
-    <div className='articles-container'>
+    <div className="articles-container">
       <h1>Articles List :</h1>
       {data.map((item) => (
         <div className="card" key={item.id}>

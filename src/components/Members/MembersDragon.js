@@ -19,18 +19,17 @@ function Members() {
   }, []);
 
   return (
-    <div className='members-container'>
+    <div className="members-container">
       <h1>Dragon crew members :</h1>
 
       {data.map((item) => (
         <div key={item.id}>
-          <Link to={`/members/${item.id}`} className='card' >
+          <Link to={`/members/${item.id}`} className="card">
             <p className="card-text">{item.name}</p>
             <img src={item.image} className="card-img-top" />
           </Link>
         </div>
       ))}
-
     </div>
   );
 }

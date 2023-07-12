@@ -23,7 +23,7 @@ const RocketDetails = () => {
 
   const rocket = data.find((item) => {
     item.id === RocketId;
-    console.log(item.id)
+    console.log(item.id);
   });
 
   if (!rocket) {

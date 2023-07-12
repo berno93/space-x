@@ -30,21 +30,30 @@ function MemberDetails() {
   }
 
   return (
-    <div className='member-container'>
-      <div className='card mb-3'>
+    <div className="member-container">
+      <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
             <img src={member.image} className="img-fluid rounded-start" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              {member.status && <p className="card-text">{member.name} is working at {member.agency}</p>}
-              {!member.status && <p className="card-text">{member.name} has worked at {member.agency}</p>}
-              <a href={member.wikipedia} className="wikiLink" target='blank'>Wikipedia</a>
+              {member.status && (
+                <p className="card-text">
+                  {member.name} is working at {member.agency}
+                </p>
+              )}
+              {!member.status && (
+                <p className="card-text">
+                  {member.name} has worked at {member.agency}
+                </p>
+              )}
+              <a href={member.wikipedia} className="wikiLink" target="blank">
+                Wikipedia
+              </a>
             </div>
           </div>
         </div>
-
       </div>
       <Link to="/members">Retour à la liste des membres</Link>
     </div>
