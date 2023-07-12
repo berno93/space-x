@@ -2,8 +2,24 @@
   float: left;
   margin: 50px 0px 0px 25px;
   border-radius: 30px;
-  width: 700px;
+  width: 650px;
   height: 504px;
+}
+
+#carouselExampleAutoplaying {
+  float: left;
+  margin: 50px 0px 0px 25px;
+  width: 700px;
+  height: 554px;
+  border-radius: 30px;
+}
+
+button.carousel-control-next {
+  margin-top: 40px;
+}
+
+button.carousel-control-prev {
+  margin-top: 40px;
 }
 
 .td-float-r {
@@ -21,7 +37,7 @@ table {
 
 #overview {
   float: right;
-  margin: -15px 25px 0px 0px;
+  margin: 0px 25px 0px 0px;
 }
 
 .td-float-l {
@@ -38,8 +54,9 @@ table {
 }
 
 #p-description {
-  margin-top: 80px;
-  font-size: 50px;
+  margin-top: -20px;
+  font-size: 40px;
+  padding: 100px;
 }
 
 #title-description {
