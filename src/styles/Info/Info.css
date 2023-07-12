@@ -47,16 +47,18 @@ table {
   margin: 100px 0px 60px 0px;
 }
 
-#links div{
+#links div {
   margin: 50px 0px 300px 0px;
 }
 
-#links div a{
+#links div a {
   margin-right: 20px;
 }
 
 .animated-div {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
 }
