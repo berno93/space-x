@@ -4,6 +4,7 @@ import '../../styles/V_Rockets/V_Rockets_list.css';
 import { Link } from 'react-router-dom';
 
 function Rocket() {
+  document.title = "Versions de fusées de SpaceX";
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

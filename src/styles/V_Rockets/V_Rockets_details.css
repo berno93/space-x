@@ -24,10 +24,26 @@ table {
   margin: -15px 25px 0px 0px;
 }
 
-.td-float-l{
+.td-float-l {
   text-align: initial;
+  font-size: 25px;
 }
 
-#description{
+#description {
   margin-bottom: 600px;
+}
+#description {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#p-description {
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+#title-description {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  display: initial;
 }

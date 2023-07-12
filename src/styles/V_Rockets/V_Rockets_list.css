@@ -25,22 +25,6 @@ h4 {
   color: black;
 }
 
-#description {
-  display: inline-block;
-  margin-top: 100px;
-}
-
-#p-description {
-  margin-top: 80px;
-  font-size: 50px;
-}
-
-#title-description {
-  border-bottom: 1px solid;
-  padding-bottom: 20px;
-  display: initial;
-}
-
 #logo-wiki {
   width: 50px;
   margin-bottom: 10px;

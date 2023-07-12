@@ -34,6 +34,7 @@ function RocketDetails() {
   if (rocket === null) {
     return <div>Membre introuvable</div>;
   }
+  document.title = `${rocket.name}`;
 
   return (
     <div>

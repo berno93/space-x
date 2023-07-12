@@ -36,7 +36,7 @@ const Navigation = ({ children }) => {
                 <Link to="/historique" className="nav-link">
                   Historique de SpaceX
                 </Link>
-                <Link to="/info" className="nav-link">
+                <Link to="/" className="nav-link">
                   SpaceX en tant qu'entreprise
                 </Link>
                 <Link to="/rockets" className="nav-link">

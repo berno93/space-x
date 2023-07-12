@@ -1,7 +1,7 @@
-a.nav-link{
+a.nav-link {
   color: white;
   margin-left: 20px;
-  border-bottom: 0px solid transparent; 
+  border-bottom: 0px solid transparent;
   transition: border-bottom 0.4s ease;
 }
 
