@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../styles/V_Rockets_list.css';
+import '../../styles/V_Rockets/V_Rockets_list.css';
 import { Link } from 'react-router-dom';
 
 function Rocket() {
@@ -35,7 +35,9 @@ function Rocket() {
 
   return (
     <div>
-      <h1>Les différentes versions de fusées utilisées par SpaceX</h1>
+      <h1 className="margin-top">
+        Les différentes versions de fusées utilisées par SpaceX
+      </h1>
       {data.map((item) => (
         <div key={item.id} className="conteiner div-rocket">
           <Link to={`/rockets/${item.id}`}>
@@ -44,14 +46,20 @@ function Rocket() {
           </Link>{' '}
           <h2>{item.name}</h2>
           <h4>
-            Hauteur : {item.height.meters} m / {item.height.feet} ft
+            Height : {item.height.meters} m / {item.height.feet} ft
           </h4>
           <h4>
-            Masse : {item.mass.kg} kg / {item.mass.lb} lb
+            Mass : {item.mass.kg} kg / {item.mass.lb} lb
           </h4>
-          <h4 className="margin-bottom">
-            Diamètre : {item.diameter.meters} m / {item.diameter.feet} ft
+          <h4>
+            Diameter : {item.diameter.meters} m / {item.diameter.feet} ft
           </h4>
+          <a href={item.wikipedia} target="blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/49/49360.png"
+              id="logo-wiki"
+            ></img>
+          </a>
         </div>
       ))}
     </div>

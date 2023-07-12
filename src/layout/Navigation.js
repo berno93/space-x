@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-// import '../styles/navbar.css';
+import '../styles/Navbar/navbar.css';
 
 const Navigation = ({ children }) => {
   return (
     <>
       <header>
         <nav
-          className="navbar navbar-expand-lg bg-body-tertiary"
+          className="navbar navbar-expand-lg "
           style={{ width: '100%', height: '80px' }}
         >
           <div className="container-fluid">
@@ -14,6 +14,7 @@ const Navigation = ({ children }) => {
               <img
                 src="https://cdn.icon-icons.com/icons2/2389/PNG/512/spacex_logo_icon_144865.png"
                 style={{ width: '80px' }}
+                className="logo-nav"
               ></img>
             </Link>
             <button

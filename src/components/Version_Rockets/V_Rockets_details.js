@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
+import '../../styles/V_Rockets/V_Rockets_details.css';
 
-const RocketDetails = () => {
-  const [data, setData] = useState([]);
-  const { RocketId } = useParams();
+function RocketDetails() {
+  const [rocket, setRocket] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,44 +13,76 @@ const RocketDetails = () => {
         const response = await axios.get(
           'https://api.spacexdata.com/v4/rockets',
         );
-        setData(response.data);
-        console.log(response.data);
+
+        const filteredRockets = response.data.filter(
+          (rocket) => rocket.id === id,
+        );
+
+        if (filteredRockets.length === 0) {
+          setRocket(null);
+        } else {
+          setRocket(filteredRockets[0]);
+        }
       } catch (error) {
         console.error(error);
       }
     };
+
     fetchData();
-  }, []);
+  }, [id]);
 
-  const rocket = data.find((item) => {
-    item.id === RocketId;
-    console.log(item.id)
-  });
-
-  if (!rocket) {
-    return <div>Fusée introuvable</div>;
+  if (rocket === null) {
+    return <div>Membre introuvable</div>;
   }
 
   return (
     <div>
-      <h1>Les différentes versions de fusées utilisées par SpaceX</h1>
-      {data.map((item) => (
-        <div key={item.id} className="conteiner div-rocket">
-          <img src={item.flickr_images[0]} className="img_rocket"></img>
-          <h2>{item.name}</h2>
-          <h4>
-            Hauteur : {item.height.meters} m / {item.height.feet} ft
-          </h4>
-          <h4>
-            Masse : {item.mass.kg} kg / {item.mass.lb} lb
-          </h4>
-          <h4 className="margin-bottom">
-            Diamètre : {item.diameter.meters} m / {item.diameter.feet} ft
-          </h4>
-        </div>
-      ))}
+      <img src={rocket.flickr_images[1]} className="img-rocket-details"></img>
+      <div id="overview">
+        <h2>{rocket.name}</h2>
+        <h1>OVERVIEW</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td className="td-float-l">Height</td>
+              <td className="td-float-r">
+                {rocket.height.meters} m / {rocket.height.feet} ft
+              </td>
+            </tr>
+            <tr>
+              <td className="td-float-l">Mass</td>
+              <td className="td-float-r">
+                {rocket.mass.kg} kg / {rocket.mass.lb} lb
+              </td>
+            </tr>
+            <tr>
+              <td className="td-float-l">Diameter</td>
+              <td className="td-float-r">
+                {rocket.diameter.meters} m / {rocket.diameter.feet} ft
+              </td>
+            </tr>
+            <tr>
+              <td className="td-float-l">Company</td>
+              <td className="td-float-r">{rocket.company}</td>
+            </tr>
+            <tr>
+              <td className="td-float-l">First Flight</td>
+              <td className="td-float-r">{rocket.first_flight}</td>
+            </tr>
+            <tr>
+              <td className="td-float-l">Stage</td>
+              <td className="td-float-r">{rocket.stages}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="description">
+        <h1 id="title-description">DESCRIPTION</h1>
+        <p id="p-description">{rocket.description}</p>
+      </div>
     </div>
   );
-};
+}
 
 export default RocketDetails;
