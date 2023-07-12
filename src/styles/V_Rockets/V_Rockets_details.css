@@ -1,0 +1,49 @@
+.img-rocket-details {
+  float: left;
+  margin: 50px 0px 0px 25px;
+  border-radius: 30px;
+  width: 700px;
+  height: 504px;
+}
+
+.td-float-r {
+  float: right;
+}
+
+tr {
+  font-size: 40px;
+  border-bottom: 1px solid;
+}
+
+table {
+  width: 750px;
+}
+
+#overview {
+  float: right;
+  margin: -15px 25px 0px 0px;
+}
+
+.td-float-l {
+  text-align: initial;
+  font-size: 25px;
+}
+
+#description {
+  margin-bottom: 600px;
+}
+#description {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#p-description {
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+#title-description {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  display: initial;
+}

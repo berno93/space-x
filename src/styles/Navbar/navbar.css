@@ -1,0 +1,29 @@
+a.nav-link {
+  color: white;
+  margin-left: 20px;
+  border-bottom: 0px solid transparent;
+  transition: border-bottom 0.4s ease;
+}
+
+.logo-nav {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+a.nav-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+header {
+  background-color: rgb(5, 5, 5);
+}
+
+a.nav-link:active,
+a.nav-link:focus {
+  border-bottom: 1px solid;
+}

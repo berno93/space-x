@@ -40,12 +40,12 @@
 
 * {
   font-family: 'Abel', sans-serif;
+  color: #ffffff;
 }
 
-/* header {
-  margin-bottom: 30px;
-  position: fixed;
-  width: -webkit-fill-available;
+/* h1 {
+  text-transform: uppercase;
+  margin-top: 30px;
 } */
 
 h1 {
@@ -188,10 +188,8 @@ a {
   margin-bottom: 10px;
 }
 
-.article-details .card-footer {
-  font-size: 14px;
-  text-decoration: none;
-  color: #007bff;
+body {
+  background-color: #000000;
 }
 
 .article-details .btn {
