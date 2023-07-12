@@ -33,7 +33,7 @@ const Navigation = ({ children }) => {
                 <Link to="/members" className="nav-link">
                   Membres d'équipage de Dragon
                 </Link>
-                <Link to="/historique" className="nav-link">
+                <Link to="/history" className="nav-link">
                   Historique de SpaceX
                 </Link>
                 <Link to="/" className="nav-link">
