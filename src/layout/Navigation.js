@@ -48,6 +48,9 @@ const Navigation = ({ children }) => {
                 <Link to="/roadster " className="nav-link">
                   Roadster
                 </Link>
+                <Link to="/quizz" className="nav-link">
+                  | Quizz SpaceX
+                </Link>
               </div>
             </div>
           </div>

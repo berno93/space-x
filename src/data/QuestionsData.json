@@ -1,0 +1,60 @@
+[
+  {
+    "text": "La Lune est le seul satellite naturel de la Terre.",
+    "type": "vraiFaux",
+    "correctAnswer": "vrai"
+  },
+  {
+    "text": "La gravité est plus faible sur Mars que sur la Terre.",
+    "type": "vraiFaux",
+    "correctAnswer": "vrai"
+  },
+  {
+    "text": "La planète Mercure est plus éloignée du Soleil que la planète Vénus.",
+    "type": "vraiFaux",
+    "correctAnswer": "faux"
+  },
+  {
+    "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
+    "type": "vraiFaux",
+    "correctAnswer": "faux"
+  },
+  {
+    "text": "Quelle est la plus grande planète du système solaire ?",
+    "type": "choixMultiple",
+    "options": ["Mars", "Jupiter", "Vénus", "Neptune"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "text": "Quelle est la première femme à avoir voyagé dans l'espace ?",
+    "type": "choixMultiple",
+    "options": [
+      "Valentina Tereshkova",
+      "Sally Ride",
+      "Yuri Gagarin",
+      "Mae Jemison"
+    ],
+    "correctAnswer": "Valentina Tereshkova"
+  },
+  {
+    "text": "La planète Saturne est principalement composée de gaz.",
+    "type": "vraiFaux",
+    "correctAnswer": "vrai"
+  },
+  {
+    "text": "L'année martienne est plus longue que l'année terrestre.",
+    "type": "vraiFaux",
+    "correctAnswer": "vrai"
+  },
+  {
+    "text": "La Voie lactée est une galaxie en forme de spirale.",
+    "type": "vraiFaux",
+    "correctAnswer": "vrai"
+  },
+  {
+    "text": "Combien de planètes composent le système solaire ?",
+    "type": "choixMultiple",
+    "options": ["6", "8", "9", "10"],
+    "correctAnswer": "8"
+  }
+]
