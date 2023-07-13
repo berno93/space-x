@@ -8,7 +8,8 @@ import MemberDetails from '../components/Members/MemberDetails';
 import RocketDetails from '../components/Version_Rockets/V_Rockets_details';
 import HistoryDetails from '../components/Articles/HistoryDetails';
 import InfoSpaceX from '../components/InfoSpaceX/InfoSpaceX';
-import LastLaunchInfo from '../components/Dernier_Lancement/Last_lauch';
+import LastLaunchInfo from '../components/Dernier_Lancement/Last_launch';
+import RoadsterInfo from '../components/Roadster/Roadster';
 
 const Routeur = () => {
   return (
@@ -24,6 +25,7 @@ const Routeur = () => {
           <Route exact path="/members" element={<Members />} />
           <Route exact path="/members/:id" element={<MemberDetails />} />
           <Route exact path="/last_lauch/" element={<LastLaunchInfo />} />
+          <Route exact path="/roadster/" element={<RoadsterInfo />} />
           <Route component={NoMatch} />
         </Routes>
       </Navigation>

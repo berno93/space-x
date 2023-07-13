@@ -45,8 +45,8 @@ const Navigation = ({ children }) => {
                 <Link to="/last_lauch" className="nav-link">
                   Last launch
                 </Link>
-                <Link to="/rockets" className="nav-link">
-                  Partie 6
+                <Link to="/roadster " className="nav-link">
+                  Roadster
                 </Link>
               </div>
             </div>
@@ -54,6 +54,11 @@ const Navigation = ({ children }) => {
         </nav>
       </header>
       {children}
+      {/* <footer>
+        <div>
+          Je suis un footeur
+        </div>
+      </footer> */}
     </>
   );
 };

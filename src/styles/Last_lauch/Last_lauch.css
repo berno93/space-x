@@ -1,3 +1,64 @@
-h2{
-    color: white;
+h2.h2_last-_lauch {
+  color: white !important;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+#img-logo-last-lauch {
+  float: left;
+  margin-left: 70px;
+  position: absolute;
+  top: 220px;
+}
+
+#details {
+  display: flow-root;
+}
+
+ul {
+  list-style: none;
+}
+
+.img-membres-last-lauch {
+  width: 301.6px;
+  height: 375px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#members-title-img {
+  background: white;
+  width: 301.6px;
+  display: inline-block;
+  margin: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 1px rgb(255, 255, 255);
+  transition: box-shadow 0.3s;
+}
+
+#members-title-img:hover {
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+#name-member {
+  color: #000000;
+}
+
+p {
+  font-size: 35px;
+}
+
+p.padding-last-lauch {
+  padding: 100px;
+  margin-top: -70px;
+}
+
+#img-launchpad{
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+#title-last-launch{
+  margin-top: 20px;
 }

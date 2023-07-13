@@ -37,7 +37,7 @@ function Rocket() {
   return (
     <div>
       <h1 className="margin-top">
-      The different versions of rockets used by SpaceX
+        The different versions of rockets used by SpaceX
       </h1>
       {data.map((item) => (
         <div key={item.id} className="conteiner div-rocket">
