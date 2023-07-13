@@ -125,7 +125,12 @@ function LastLaunchInfo() {
             {crewMembers.map((crew) => (
               <div id="members-title-img" key={crew.id}>
                 <h3 id="name-member">{crew.name}</h3>
-                <a href={crew.wikipedia} target="blank"><img src={crew.image} className="img-membres-last-lauch" ></img></a>
+                <a href={crew.wikipedia} target="blank">
+                  <img
+                    src={crew.image}
+                    className="img-membres-last-lauch"
+                  ></img>
+                </a>
               </div>
             ))}
           </div>

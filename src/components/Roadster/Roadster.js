@@ -7,10 +7,12 @@ const RoadsterInfo = () => {
   useEffect(() => {
     const fetchRoadsterData = async () => {
       try {
-        const response = await axios.get('https://api.spacexdata.com/v4/roadster');
+        const response = await axios.get(
+          'https://api.spacexdata.com/v4/roadster',
+        );
         setRoadsterData(response.data);
       } catch (error) {
-        console.log('Une erreur s\'est produite lors de la requête :', error);
+        console.log("Une erreur s'est produite lors de la requête :", error);
       }
     };
 
@@ -21,7 +23,8 @@ const RoadsterInfo = () => {
     return <div>Chargement en cours...</div>;
   }
   const roundedSpeed = Math.round(roadsterData.speed_kph * 100) / 100;
-  const roundedDistance = Math.round(roadsterData.earth_distance_km * 100) / 100;
+  const roundedDistance =
+    Math.round(roadsterData.earth_distance_km * 100) / 100;
 
   return (
     <div>
@@ -31,7 +34,6 @@ const RoadsterInfo = () => {
       <p>Vitesse : {roundedSpeed} km/h</p>
       <p>Distance par rapport à la Terre : {roundedDistance} km</p>
       <p>Longitude : {roadsterData.longitude} °</p>
-
     </div>
   );
 };
