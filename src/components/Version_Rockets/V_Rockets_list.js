@@ -4,7 +4,7 @@ import '../../styles/V_Rockets/V_Rockets_list.css';
 import { Link } from 'react-router-dom';
 
 function Rocket() {
-  document.title = 'Versions de fusées de SpaceX';
+  document.title = 'The different versions of rockets used by SpaceX';
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -37,7 +37,7 @@ function Rocket() {
   return (
     <div>
       <h1 className="margin-top">
-        Les différentes versions de fusées utilisées par SpaceX
+      The different versions of rockets used by SpaceX
       </h1>
       {data.map((item) => (
         <div key={item.id} className="conteiner div-rocket">

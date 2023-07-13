@@ -31,19 +31,19 @@ const Navigation = ({ children }) => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <Link to="/members" className="nav-link">
-                  Membres d'équipage de Dragon
+                  Dragon Crew Members
                 </Link>
                 <Link to="/history" className="nav-link">
-                  Historique de SpaceX
+                  SpaceX History
                 </Link>
                 <Link to="/" className="nav-link">
-                  SpaceX en tant qu'entreprise
+                  SpaceX as a company
                 </Link>
                 <Link to="/rockets" className="nav-link">
-                  Versions de fusées SpaceX
+                  SpaceX rocket releases
                 </Link>
-                <Link to="/rockets" className="nav-link">
-                  Partie 5
+                <Link to="/last_lauch" className="nav-link">
+                  Last launch
                 </Link>
                 <Link to="/rockets" className="nav-link">
                   Partie 6
