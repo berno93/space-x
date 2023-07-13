@@ -9,6 +9,13 @@ function LastLaunchInfo() {
   const [capsules, setCapsules] = useState([]);
   const [payloads, setPayloads] = useState([]);
   const [launchpad, setLaunchpad] = useState(null);
+  const [popupVisible, setPopupVisible] = useState(false);
+  const [popupContent, setPopupContent] = useState({
+    name: '',
+    image: '',
+    role: '',
+    wikipedia: '',
+  });
 
   useEffect(() => {
     fetch('https://api.spacexdata.com/v5/launches/latest')
@@ -36,9 +43,11 @@ function LastLaunchInfo() {
       ),
     )
       .then((data) => {
-        const crewMembersData = data.map((response) => response);
+        const crewMembersData = data.map((response) => ({
+          ...response,
+          role: crewIds.find((crew) => crew.crew === response.id).role,
+        }));
         setCrewMembers(crewMembersData);
-        console.log('members', crewMembersData);
       })
       .catch((error) => {
         console.error('Error fetching crew members:', error);
@@ -55,7 +64,6 @@ function LastLaunchInfo() {
     Promise.all(requests)
       .then((data) => {
         setCapsules(data);
-        console.log('capsules', data);
       })
       .catch((error) => {
         console.error('Error fetching capsules:', error);
@@ -72,7 +80,6 @@ function LastLaunchInfo() {
     Promise.all(requests)
       .then((data) => {
         setPayloads(data);
-        console.log('capsules', data);
       })
       .catch((error) => {
         console.error('Error fetching payloads:', error);
@@ -84,18 +91,19 @@ function LastLaunchInfo() {
       .then((response) => response.json())
       .then((data) => {
         setLaunchpad(data);
-        console.log('launchpad', data);
       })
       .catch((error) => {
         console.error('Error fetching launchpad:', error);
       });
   };
-  if (!lastLaunch) {
-    return (
-      <div className="loader">
-        <ClipLoader color="#ffffff" size={50} />
-      </div>
-    );
+
+  function showPopup(name, image, role, wikipedia, agency) {
+    setPopupContent({ name, image, role, wikipedia, agency });
+    setPopupVisible(true);
+  }
+
+  function hidePopup() {
+    setPopupVisible(false);
   }
 
   const formatDate = (dateString) => {
@@ -106,55 +114,102 @@ function LastLaunchInfo() {
 
   return (
     <div>
-      <h1 id="title-last-launch">Last Launch Information</h1>
-      <section id="details">
-        <div id="img-logo-last-lauch" className="div-section-details ">
-          <img src={lastLaunch.links.patch.small}></img>
+      {!lastLaunch ? (
+        <div className="loader">
+          <ClipLoader color="#ffffff" size={50} />
         </div>
-        <div className="div-section-details">
-          <h2 className="h2_last-_lauch">Details</h2>
-          <p>Flight Number {lastLaunch.flight_number}</p>
-          <p>Mission {lastLaunch.name}</p>
-          <p>{formatDate(lastLaunch.date_local)}</p>
-        </div>
-      </section>
-      <section id="members">
-        <div>
-          <h2 className="h2_last-_lauch">Crew Members</h2>
+      ) : (
+        <>
+          <h1 id="title-last-launch">Last Launch Information</h1>
+          <section id="details">
+            <div id="img-logo-last-lauch" className="div-section-details ">
+              <img src={lastLaunch.links.patch.small} alt="Launch Patch" />
+            </div>
+            <div className="div-section-details">
+              <h2 className="h2_last-_lauch">Details</h2>
+              <p>Flight Number {lastLaunch.flight_number}</p>
+              <p>Mission {lastLaunch.name}</p>
+              <p>{formatDate(lastLaunch.date_local)}</p>
+            </div>
+          </section>
+          <section id="members">
+            <div>
+              <h2 className="h2_last-_lauch">Crew Members</h2>
+              <div>
+                {crewMembers.map((crew) => (
+                  <div
+                    id="members-title-img"
+                    key={crew.id}
+                    onClick={() =>
+                      showPopup(
+                        crew.name,
+                        crew.image,
+                        crew.role,
+                        crew.wikipedia,
+                        crew.agency,
+                      )
+                    }
+                  >
+                    <h3 id="name-member">{crew.name}</h3>
+                    <img
+                      src={crew.image}
+                      className="img-membres-last-lauch"
+                      alt="Crew Member"
+                    />
+                    <h4 id="role-member">{crew.role}</h4>
+                  </div>
+                ))}
+              </div>
+              <div
+                id="popup-container"
+                style={{ display: popupVisible ? 'block' : 'none' }}
+                onClick={hidePopup}
+              >
+                <div id="popup-content">
+                  <h3 id="popup-name">{popupContent.name}</h3>
+                  <img id="popup-image" src={popupContent.image} alt="" />
+                  <h4 id="popup-role">{popupContent.role}</h4>
+                  <h4 id="popup-agency">{popupContent.agency}</h4>
+                  <a
+                    href={popupContent.wikipedia}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/49/49360.png"
+                      id="logo-wiki"
+                    ></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <div>
-            {crewMembers.map((crew) => (
-              <div id="members-title-img" key={crew.id}>
-                <h3 id="name-member">{crew.name}</h3>
-                <a href={crew.wikipedia} target="blank">
-                  <img
-                    src={crew.image}
-                    className="img-membres-last-lauch"
-                  ></img>
-                </a>
+            {capsules.map((capsule) => (
+              <div key={capsule.id}>
+                <h2 className="h2_last-_lauch">Capsules</h2>
+                <h3>{capsule.serial}</h3>
+                <h3>{capsule.type}</h3>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-      <div>
-        {capsules.map((capsule) => (
-          <div key={capsule.id}>
-            <h2 className="h2_last-_lauch">Capsules</h2>
-            <h3>{capsule.serial}</h3>
-            <h3>{capsule.type}</h3>
-          </div>
-        ))}
-      </div>
-      <h2 className="h2_last-_lauch">Launchpad</h2>
-      {launchpad && (
-        <div>
-          <p>{launchpad.full_name}</p>
-          <p>
-            {launchpad.locality}, {launchpad.region}
-          </p>
-          <p className="padding-last-lauch">{launchpad.details}</p>
-          <img src={launchpad.images.large} id="img-launchpad"></img>
-        </div>
+          <h2 className="h2_last-_lauch">Launchpad</h2>
+          {launchpad && (
+            <div>
+              <p>{launchpad.full_name}</p>
+              <p>
+                {launchpad.locality}, {launchpad.region}
+              </p>
+              <p className="padding-last-lauch">{launchpad.details}</p>
+              <img
+                src={launchpad.images.large}
+                id="img-launchpad"
+                alt="Launchpad"
+              />
+            </div>
+          )}
+        </>
       )}
     </div>
   );

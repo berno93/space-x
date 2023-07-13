@@ -30,14 +30,14 @@ const Navigation = ({ children }) => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <Link to="/members" className="nav-link">
-                  Dragon Crew Members
+                <Link to="/" className="nav-link">
+                  SpaceX
                 </Link>
                 <Link to="/history" className="nav-link">
                   SpaceX History
                 </Link>
-                <Link to="/" className="nav-link">
-                  SpaceX as a company
+                <Link to="/members" className="nav-link">
+                  Dragon Crew Members
                 </Link>
                 <Link to="/rockets" className="nav-link">
                   SpaceX rocket releases
@@ -49,7 +49,7 @@ const Navigation = ({ children }) => {
                   Roadster
                 </Link>
                 <Link to="/quizz" className="nav-link">
-                  | Quizz SpaceX
+                  Quizz SpaceX
                 </Link>
               </div>
             </div>

@@ -10,7 +10,6 @@ import HistoryDetails from '../components/Articles/HistoryDetails';
 import InfoSpaceX from '../components/InfoSpaceX/InfoSpaceX';
 import LastLaunchInfo from '../components/Dernier_Lancement/Last_launch';
 import RoadsterInfo from '../components/Roadster/Roadster';
-import LastLaunchInfo from '../components/Dernier_Lancement/Last_lauch';
 import QuizzPage from '../components/Quizz/Quizz';
 
 const Routeur = () => {
