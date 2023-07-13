@@ -43,7 +43,7 @@ const Navigation = ({ children }) => {
                   Versions de fusées SpaceX
                 </Link>
                 <Link to="/quizz" className="nav-link">
-                  |  Quizz SpaceX
+                  | Quizz SpaceX
                 </Link>
               </div>
             </div>
