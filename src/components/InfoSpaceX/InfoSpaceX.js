@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/Info/Info.css';
+import '../../styles/Info/Info.css';
 
 const SpaceXInfo = () => {
-  document.title = 'Informations SpaceX';
+  document.title = 'SpaceX';
   const [info, setInfo] = useState({});
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const SpaceXInfo = () => {
       <table>
         <tbody>
           <tr>
-            <td className="td-float-l-i">Création</td>
+            <td className="td-float-l-i">Founded</td>
             <td className="td-float-r-i">{info.founded}</td>
           </tr>
           <tr>
@@ -35,32 +35,32 @@ const SpaceXInfo = () => {
             <td className="td-float-r-i">{info.ceo}</td>
           </tr>
           <tr>
-            <td className="td-float-l-i">Siège social</td>
+            <td className="td-float-l-i">Head Quarters</td>
             <td className="td-float-r-i">
               {info.headquarters?.address}, {info.headquarters?.city},{' '}
               {info.headquarters?.state}
             </td>
           </tr>
           <tr>
-            <td className="td-float-l-i">Employées</td>
+            <td className="td-float-l-i">Employees</td>
             <td className="td-float-r-i">{info.employees}</td>
           </tr>
           <tr>
-            <td className="td-float-l-i">Véhicules</td>
+            <td className="td-float-l-i">Vehicles</td>
             <td className="td-float-r-i">{info.vehicles}</td>
           </tr>
           <tr>
-            <td className="td-float-l-i">Sites de lancement</td>
+            <td className="td-float-l-i">Launch Sites</td>
             <td className="td-float-r-i">{info.launch_sites}</td>
           </tr>
         </tbody>
       </table>
       <div id="summary">
-        <h1 id="title-summary">Résumer</h1>
+        <h1 id="title-summary">Summary</h1>
         <p id="p-summary">{info.summary}</p>
       </div>
       <div id="links">
-        <h1 id="title-summary">Liens</h1>
+        <h1 id="title-summary">Links</h1>
         <div>
           <a href={info.links?.website} target="blank">
             <img

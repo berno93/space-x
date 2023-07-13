@@ -38,7 +38,83 @@ function RocketDetails() {
 
   return (
     <div>
-      <img src={rocket.flickr_images[1]} className="img-rocket-details"></img>
+      <div
+        id="carouselExampleAutoplaying"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src={
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3]
+              }
+              className="img-rocket-details"
+            ></img>
+          </div>
+          <div className="carousel-item">
+            <img
+              src={
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0]
+              }
+              className="img-rocket-details"
+            ></img>
+          </div>
+          <div className="carousel-item">
+            <img
+              src={
+                rocket.flickr_images[2] ||
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1]
+              }
+              className="img-rocket-details"
+            ></img>
+          </div>
+          <div className="carousel-item">
+            <img
+              src={
+                rocket.flickr_images[3] ||
+                rocket.flickr_images[0] ||
+                rocket.flickr_images[1] ||
+                rocket.flickr_images[2]
+              }
+              className="img-rocket-details"
+            ></img>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+      {/* <img src={rocket.flickr_images[1]} className="img-rocket-details"></img> */}
       <div id="overview">
         <h2>{rocket.name}</h2>
         <h1>OVERVIEW</h1>
@@ -73,6 +149,10 @@ function RocketDetails() {
             <tr>
               <td className="td-float-l">Stage</td>
               <td className="td-float-r">{rocket.stages}</td>
+            </tr>
+            <tr>
+              <td className="td-float-l">Country</td>
+              <td className="td-float-r">{rocket.country}</td>
             </tr>
           </tbody>
         </table>

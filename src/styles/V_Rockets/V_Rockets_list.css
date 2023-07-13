@@ -1,17 +1,33 @@
 .conteiner.div-rocket {
-  width: max-content;
+  width: 480px;
+  height: 600px;
   display: inline-block;
   margin: 60px 100px;
   border-radius: 50px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
   background-color: white;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  transition:
+    height 0.5s,
+    width 0.5s,
+    box-shadow 0.3s;
+}
+
+.conteiner.div-rocket:hover {
+  width: 500px;
+  height: 620px;
+  box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
 .img_rocket {
-  width: 480px;
+  /* width: 480px; */
+  width: max-content;
   height: 360px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+}
+
+img.img_rocket {
+  width: -webkit-fill-available;
 }
 
 h2 {
