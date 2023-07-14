@@ -1,0 +1,25 @@
+.members-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-member {
+  width: 33.33%;
+}
+
+.card-img-top {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.members-container .card {
+  border-radius: 20px;
+  box-shadow: 0 0 10px #212529;
+  transition: box-shadow 0.4s;
+}
+
+.members-container .card:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}

@@ -1,3 +1,99 @@
-h2 {
-  color: white;
+h2.h2_last-_lauch {
+  color: white !important;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+#img-logo-last-lauch {
+  float: left;
+  margin-left: 70px;
+  position: absolute;
+  top: 220px;
+}
+
+#details {
+  display: flow-root;
+}
+
+ul {
+  list-style: none;
+}
+
+.img-membres-last-lauch {
+  width: 301.6px;
+  height: 375px;
+}
+
+#members-title-img {
+  background: #212529;
+  width: 301.6px;
+  display: inline-block;
+  margin: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #212529;
+  transition: box-shadow 0.4s;
+}
+
+#members-title-img:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#name-member {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 35px;
+}
+
+p.padding-last-lauch {
+  padding: 100px;
+  margin-top: -70px;
+}
+
+#img-launchpad {
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+#title-last-launch {
+  margin-top: 20px;
+}
+
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#popup-name {
+  margin-top: 0;
+  color: #000000;
+  padding-top: 10px;
+}
+
+#popup-image {
+  max-width: 350px;
+  height: auto;
+}
+
+h4#role-member {
+  padding: 20px;
+  color:white;
 }

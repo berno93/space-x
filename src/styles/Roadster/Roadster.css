@@ -1,0 +1,13 @@
+.roadster-div{
+    background-image: url("https://farm5.staticflickr.com/4615/40143096241_11128929df_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover 100px;
+}
+
+.margin{
+    padding-bottom: 700px;
+}
+
+#title-roadster{
+    color: white !important;
+}

@@ -35,7 +35,7 @@ function Question({ question, handleAnswer }) {
 
   return (
     <div className="Question">
-      <h2>{question.text}</h2>
+      <h1>{question.text}</h1>
       {question.type === 'vraiFaux' && (
         <form onSubmit={handleSubmit}>
           <div>

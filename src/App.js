@@ -4,7 +4,7 @@ import Routeur from './router/Routeur';
 
 function App() {
   return (
-    <div className="App space-background">
+    <div className="App space-background background">
       <Routeur />
     </div>
   );
