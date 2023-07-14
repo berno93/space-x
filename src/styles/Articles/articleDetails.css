@@ -1,0 +1,25 @@
+.articles-container .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-top: solid 1px white;
+    padding: 0;
+}
+
+.articles-container .card-date {
+    margin-block: 20px;
+}
+
+.article-details .card-header {
+    padding: 10px;
+}
+
+.article-details .card-text {
+    padding: 10px;
+    text-align: start;
+    border-bottom: solid 1px;
+}
+
+.article-details .text-body-secondary {
+    color: white;
+}

@@ -159,7 +159,7 @@ a {
 
 /* ------------------------------------------Articles Details--------------------------------- */
 
-.article-details {
+/* .article-details {
   width: 50%;
   margin: 0 auto;
   margin-top: 200px;
@@ -187,15 +187,56 @@ a {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
+*/
 body {
   background-color: #000000;
 }
 
-.article-details .btn {
+/* .article-details .btn {
   margin-block: 20px;
   background-color: white;
   color: #282c34;
   border: none;
   font-weight: bold;
+} */
+
+/* ------------------------------questions----------------------------------- */
+.Question {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40vw;
+}
+
+.Question h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.Question form {
+  margin-bottom: 10px;
+}
+
+.Question label {
+  display: block;
+  margin-bottom: 10px;
+  width: 40vw;
+}
+
+.Question input[type="radio"] {
+  margin-right: 5px;
+}
+
+.Question button {
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #282c34;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Question p {
+  margin-top: 10px;
 }

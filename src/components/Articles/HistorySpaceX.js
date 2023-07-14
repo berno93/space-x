@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import { format } from 'date-fns';
+import '../../styles/Articles/articles.css'
 function History() {
   const [data, setData] = useState([]);
 
@@ -23,13 +24,21 @@ function History() {
     fetchData();
   }, []);
 
+  const formatDate = (dateString) => {
+    const dateObject = new Date(dateString);
+    const formattedDate = format(dateObject, "do 'of' MMMM yyyy");
+    return formattedDate;
+  };
+
   return (
     <div className="articles-container">
       <h1>Articles List :</h1>
       {data.map((item) => (
         <div className="card" key={item.id}>
           <Link to={`/history/${item.id}`}>
-            <div className="card-header">{item.event_date_utc}</div>
+            <div className="card-header">
+              <div>{formatDate(item.event_date_utc)}</div>
+            </div>
             <div className="card-body">
               <div className="card-title">{item.title}</div>
             </div>
