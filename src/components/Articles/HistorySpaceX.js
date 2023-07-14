@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
-import '../../styles/Articles/articles.css'
+import '../../styles/Articles/articles.css';
 function History() {
   const [data, setData] = useState([]);
 
