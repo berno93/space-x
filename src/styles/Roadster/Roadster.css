@@ -1,13 +1,26 @@
 .roadster-div {
-  background-image: url('https://farm5.staticflickr.com/4615/40143096241_11128929df_b.jpg');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Elon_Musk%27s_Tesla_Roadster_%2840110297852%29.jpg');
   background-repeat: no-repeat;
-  background-size: cover 100px;
+  background-size: cover;
 }
 
 .margin {
-  padding-bottom: 700px;
+  padding-bottom: 250px;
 }
 
 #title-roadster {
   color: white !important;
+}
+
+#div-info-roadster {
+  margin-top: 110px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 50px;
+  background: rgb(0, 0, 0, 0.7);
+  padding: 25px;
+}
+
+p.p-roadster {
+  font-size: 25px;
 }

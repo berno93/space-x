@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../../styles/Members/Members.css';
+import '../../styles/Members/Members.css';
 
 function Members() {
   const [data, setData] = useState([]);

@@ -32,7 +32,7 @@ function History() {
 
   return (
     <div className="articles-container">
-      <h1>Articles List :</h1>
+      <h1>Articles List </h1>
       {data.map((item) => (
         <div className="card" key={item.id}>
           <Link to={`/history/${item.id}`}>
