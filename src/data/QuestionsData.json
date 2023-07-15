@@ -1,426 +1,291 @@
 [
-    {
-        "theme": "Les planètes du système solaire",
-        "questions": [
-            {
-                "text": "Quelle est la plus grande planète du système solaire ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Mars",
-                    "Jupiter",
-                    "Vénus",
-                    "Neptune"
-                ],
-                "correctAnswer": "Jupiter"
-            },
-            {
-                "text": "Combien de planètes composent le système solaire ?",
-                "type": "choixMultiple",
-                "options": [
-                    "6",
-                    "8",
-                    "9",
-                    "10"
-                ],
-                "correctAnswer": "8"
-            },
-            {
-                "text": "Quelle planète est la plus proche du Soleil ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vénus",
-                    "Mercure",
-                    "Mars",
-                    "Jupiter"
-                ],
-                "correctAnswer": "Mercure"
-            },
-            {
-                "text": "Quelle planète est surnommée la \"planète rouge\" ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vénus",
-                    "Mars",
-                    "Saturne",
-                    "Uranus"
-                ],
-                "correctAnswer": "Mars"
-            },
-            {
-                "text": "Quelle est la plus grande planète du système solaire en termes de diamètre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Jupiter",
-                    "Saturne",
-                    "Uranus",
-                    "Neptune"
-                ],
-                "correctAnswer": "Jupiter"
-            },
-            {
-                "text": "Quelle planète est célèbre pour ses anneaux ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vénus",
-                    "Mercure",
-                    "Saturne",
-                    "Mars"
-                ],
-                "correctAnswer": "Saturne"
-            },
-            {
-                "text": "Quelle planète est la plus éloignée du Soleil ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Neptune",
-                    "Uranus",
-                    "Pluton",
-                    "Jupiter"
-                ],
-                "correctAnswer": "Neptune"
-            },
-            {
-                "text": "Quelle planète est la plus petite du système solaire en termes de diamètre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Mercure",
-                    "Vénus",
-                    "Mars",
-                    "Pluton"
-                ],
-                "correctAnswer": "Mercure"
-            },
-            {
-                "text": "Quelle planète est connue pour ses tempêtes géantes appelées \"grands taches rouges\" ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Mars",
-                    "Jupiter",
-                    "Saturne",
-                    "Uranus"
-                ],
-                "correctAnswer": "Jupiter"
-            },
-            {
-                "text": "Quelle planète est surnommée la \"géante de glace\" ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Saturne",
-                    "Uranus",
-                    "Neptune",
-                    "Mars"
-                ],
-                "correctAnswer": "Uranus"
-            }
-        ]
-    },
-    {
-        "theme": "Les phénomènes célestes",
-        "questions": [
-            {
-                "text": "La Lune est le seul satellite naturel de la Terre.",
-                "type": "vraiFaux",
-                "correctAnswer": "vrai"
-            },
-            {
-                "text": "La gravité est plus faible sur Mars que sur la Terre.",
-                "type": "vraiFaux",
-                "correctAnswer": "vrai"
-            },
-            {
-                "text": "La planète Mercure est plus éloignée du Soleil que la planète Vénus.",
-                "type": "vraiFaux",
-                "correctAnswer": "faux"
-            },
-            {
-                "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
-                "type": "vraiFaux",
-                "correctAnswer": "faux"
-            },
-            {
-                "text": "Quelle est la plus brillante étoile du ciel nocturne ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vénus",
-                    "Mars",
-                    "Sirius",
-                    "Proxima du Centaure"
-                ],
-                "correctAnswer": "Sirius"
-            },
-            {
-                "text": "Quel phénomène astronomique se produit lorsqu'un astéroïde entre en collision avec la Terre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Comète",
-                    "Éclipse solaire",
-                    "Météorite",
-                    "Aurore boréale"
-                ],
-                "correctAnswer": "Météorite"
-            },
-            {
-                "text": "Quelle est la période de révolution de la Terre autour du Soleil ?",
-                "type": "choixMultiple",
-                "options": [
-                    "365 jours",
-                    "24 heures",
-                    "30 jours",
-                    "12 mois"
-                ],
-                "correctAnswer": "365 jours"
-            },
-            {
-                "text": "Quel phénomène produit la lumière des étoiles filantes ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Combustion",
-                    "Fusion nucléaire",
-                    "Réflexion",
-                    "Atmosphère"
-                ],
-                "correctAnswer": "Réflexion"
-            },
-            {
-                "text": "Quel phénomène astronomique est caractérisé par une éclipse totale du Soleil ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Éclipse solaire",
-                    "Éclipse lunaire",
-                    "Transit de Vénus",
-                    "Éclipse annulaire"
-                ],
-                "correctAnswer": "Éclipse solaire"
-            },
-            {
-                "text": "Quelle est la durée moyenne d'une journée sur Terre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "24 heures",
-                    "12 heures",
-                    "30 jours",
-                    "365 jours"
-                ],
-                "correctAnswer": "24 heures"
-            }
-        ]
-    },
-    {
-        "theme": "Les étoiles et les constellations",
-        "questions": [
-            {
-                "text": "La Voie lactée est une galaxie en forme de spirale.",
-                "type": "vraiFaux",
-                "correctAnswer": "vrai"
-            },
-            {
-                "text": "Quelle étoile est la plus proche de la Terre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Sirius",
-                    "Alpha Centauri",
-                    "Vega",
-                    "Proxima du Centaure"
-                ],
-                "correctAnswer": "Proxima du Centaure"
-            },
-            {
-                "text": "Combien d'étoiles composent la constellation de la Grande Ourse ?",
-                "type": "choixMultiple",
-                "options": [
-                    "4",
-                    "7",
-                    "12",
-                    "20"
-                ],
-                "correctAnswer": "7"
-            },
-            {
-                "text": "Quelle constellation est représentée par un chasseur armé d'un arc ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Orion",
-                    "Pégase",
-                    "Hercule",
-                    "Andromède"
-                ],
-                "correctAnswer": "Orion"
-            },
-            {
-                "text": "Quelle étoile est connue sous le nom de \"Étoile Polaire\" ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Sirius",
-                    "Polaris",
-                    "Vega",
-                    "Betelgeuse"
-                ],
-                "correctAnswer": "Polaris"
-            },
-            {
-                "text": "Quelle est la plus brillante étoile de la constellation d'Orion ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Rigel",
-                    "Bételgeuse",
-                    "Aldebaran",
-                    "Sirius"
-                ],
-                "correctAnswer": "Rigel"
-            },
-            {
-                "text": "Quelle constellation est représentée par un animal mythologique à corps de lion et tête de femme ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Lion",
-                    "Vierge",
-                    "Scorpion",
-                    "Balance"
-                ],
-                "correctAnswer": "Vierge"
-            },
-            {
-                "text": "Quelle étoile est connue sous le nom de \"Étoile du Berger\" ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Sirius",
-                    "Vénus",
-                    "Altaïr",
-                    "Polaris"
-                ],
-                "correctAnswer": "Vénus"
-            },
-            {
-                "text": "Quelle étoile est située au centre de notre système solaire ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vénus",
-                    "Mars",
-                    "Soleil",
-                    "Jupiter"
-                ],
-                "correctAnswer": "Soleil"
-            },
-            {
-                "text": "Quelle est la plus brillante étoile de la constellation du Cygne ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Sirius",
-                    "Vega",
-                    "Bételgeuse",
-                    "Proxima du Centaure"
-                ],
-                "correctAnswer": "Vega"
-            }
-        ]
-    },
-    {
-        "theme": "Les missions spatiales historiques",
-        "questions": [
-            {
-                "text": "Quelle est la première femme à avoir voyagé dans l'espace ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Valentina Tereshkova",
-                    "Sally Ride",
-                    "Yuri Gagarin",
-                    "Mae Jemison"
-                ],
-                "correctAnswer": "Valentina Tereshkova"
-            },
-            {
-                "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
-                "type": "vraiFaux",
-                "correctAnswer": "faux"
-            },
-            {
-                "text": "Quel astronaute a été le premier à marcher sur la Lune ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Neil Armstrong",
-                    "Buzz Aldrin",
-                    "Yuri Gagarin",
-                    "Alan Shepard"
-                ],
-                "correctAnswer": "Neil Armstrong"
-            },
-            {
-                "text": "Quelle mission spatiale a permis de poser le premier homme sur la Lune ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Apollo 11",
-                    "Vostok 1",
-                    "Gemini 7",
-                    "Soyouz 1"
-                ],
-                "correctAnswer": "Apollo 11"
-            },
-            {
-                "text": "Quelle mission a été la première à envoyer un humain dans l'espace ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vostok 1",
-                    "Apollo 11",
-                    "Gemini 7",
-                    "Soyouz 1"
-                ],
-                "correctAnswer": "Vostok 1"
-            },
-            {
-                "text": "Quelle mission spatiale a été la première à atteindre la Lune en orbite ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Apollo 8",
-                    "Vostok 1",
-                    "Gemini 7",
-                    "Soyouz 1"
-                ],
-                "correctAnswer": "Apollo 8"
-            },
-            {
-                "text": "Quelle mission a été la première à effectuer un rendez-vous spatial entre deux vaisseaux ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Gemini 6A et Gemini 7",
-                    "Apollo 11 et Apollo 13",
-                    "Soyouz 1 et Soyouz 3",
-                    "Vostok 1 et Vostok 2"
-                ],
-                "correctAnswer": "Gemini 6A et Gemini 7"
-            },
-            {
-                "text": "Quelle mission spatiale a été la première à envoyer un équipage mixte composé d'hommes et de femmes ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Soyouz 4 et Soyouz 5",
-                    "Apollo 11 et Apollo 13",
-                    "Gemini 6A et Gemini 7",
-                    "Vostok 1 et Vostok 2"
-                ],
-                "correctAnswer": "Soyouz 4 et Soyouz 5"
-            },
-            {
-                "text": "Quelle mission spatiale a permis de réaliser le premier amarrage entre un vaisseau spatial américain et un vaisseau spatial soviétique ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Apollo 11 et Apollo-Soyouz",
-                    "Gemini 6A et Gemini 7",
-                    "Soyouz 4 et Soyouz 5",
-                    "Vostok 1 et Vostok 2"
-                ],
-                "correctAnswer": "Apollo 11 et Apollo-Soyouz"
-            },
-            {
-                "text": "Quelle mission spatiale a été la première à effectuer un vol habité autour de la Terre ?",
-                "type": "choixMultiple",
-                "options": [
-                    "Vostok 1",
-                    "Apollo 11",
-                    "Gemini 7",
-                    "Soyouz 1"
-                ],
-                "correctAnswer": "Vostok 1"
-            }
-        ]
-    }
+  {
+    "theme": "Les planètes du système solaire",
+    "questions": [
+      {
+        "text": "Quelle est la plus grande planète du système solaire ?",
+        "type": "choixMultiple",
+        "options": ["Mars", "Jupiter", "Vénus", "Neptune"],
+        "correctAnswer": "Jupiter"
+      },
+      {
+        "text": "Combien de planètes composent le système solaire ?",
+        "type": "choixMultiple",
+        "options": ["6", "8", "9", "10"],
+        "correctAnswer": "8"
+      },
+      {
+        "text": "Quelle planète est la plus proche du Soleil ?",
+        "type": "choixMultiple",
+        "options": ["Vénus", "Mercure", "Mars", "Jupiter"],
+        "correctAnswer": "Mercure"
+      },
+      {
+        "text": "Quelle planète est surnommée la \"planète rouge\" ?",
+        "type": "choixMultiple",
+        "options": ["Vénus", "Mars", "Saturne", "Uranus"],
+        "correctAnswer": "Mars"
+      },
+      {
+        "text": "Quelle est la plus grande planète du système solaire en termes de diamètre ?",
+        "type": "choixMultiple",
+        "options": ["Jupiter", "Saturne", "Uranus", "Neptune"],
+        "correctAnswer": "Jupiter"
+      },
+      {
+        "text": "Quelle planète est célèbre pour ses anneaux ?",
+        "type": "choixMultiple",
+        "options": ["Vénus", "Mercure", "Saturne", "Mars"],
+        "correctAnswer": "Saturne"
+      },
+      {
+        "text": "Quelle planète est la plus éloignée du Soleil ?",
+        "type": "choixMultiple",
+        "options": ["Neptune", "Uranus", "Pluton", "Jupiter"],
+        "correctAnswer": "Neptune"
+      },
+      {
+        "text": "Quelle planète est la plus petite du système solaire en termes de diamètre ?",
+        "type": "choixMultiple",
+        "options": ["Mercure", "Vénus", "Mars", "Pluton"],
+        "correctAnswer": "Mercure"
+      },
+      {
+        "text": "Quelle planète est connue pour ses tempêtes géantes appelées \"grands taches rouges\" ?",
+        "type": "choixMultiple",
+        "options": ["Mars", "Jupiter", "Saturne", "Uranus"],
+        "correctAnswer": "Jupiter"
+      },
+      {
+        "text": "Quelle planète est surnommée la \"géante de glace\" ?",
+        "type": "choixMultiple",
+        "options": ["Saturne", "Uranus", "Neptune", "Mars"],
+        "correctAnswer": "Uranus"
+      }
+    ]
+  },
+  {
+    "theme": "Les phénomènes célestes",
+    "questions": [
+      {
+        "text": "La Lune est le seul satellite naturel de la Terre.",
+        "type": "vraiFaux",
+        "correctAnswer": "vrai"
+      },
+      {
+        "text": "La gravité est plus faible sur Mars que sur la Terre.",
+        "type": "vraiFaux",
+        "correctAnswer": "vrai"
+      },
+      {
+        "text": "La planète Mercure est plus éloignée du Soleil que la planète Vénus.",
+        "type": "vraiFaux",
+        "correctAnswer": "faux"
+      },
+      {
+        "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
+        "type": "vraiFaux",
+        "correctAnswer": "faux"
+      },
+      {
+        "text": "Quelle est la plus brillante étoile du ciel nocturne ?",
+        "type": "choixMultiple",
+        "options": ["Vénus", "Mars", "Sirius", "Proxima du Centaure"],
+        "correctAnswer": "Sirius"
+      },
+      {
+        "text": "Quel phénomène astronomique se produit lorsqu'un astéroïde entre en collision avec la Terre ?",
+        "type": "choixMultiple",
+        "options": ["Comète", "Éclipse solaire", "Météorite", "Aurore boréale"],
+        "correctAnswer": "Météorite"
+      },
+      {
+        "text": "Quelle est la période de révolution de la Terre autour du Soleil ?",
+        "type": "choixMultiple",
+        "options": ["365 jours", "24 heures", "30 jours", "12 mois"],
+        "correctAnswer": "365 jours"
+      },
+      {
+        "text": "Quel phénomène produit la lumière des étoiles filantes ?",
+        "type": "choixMultiple",
+        "options": [
+          "Combustion",
+          "Fusion nucléaire",
+          "Réflexion",
+          "Atmosphère"
+        ],
+        "correctAnswer": "Réflexion"
+      },
+      {
+        "text": "Quel phénomène astronomique est caractérisé par une éclipse totale du Soleil ?",
+        "type": "choixMultiple",
+        "options": [
+          "Éclipse solaire",
+          "Éclipse lunaire",
+          "Transit de Vénus",
+          "Éclipse annulaire"
+        ],
+        "correctAnswer": "Éclipse solaire"
+      },
+      {
+        "text": "Quelle est la durée moyenne d'une journée sur Terre ?",
+        "type": "choixMultiple",
+        "options": ["24 heures", "12 heures", "30 jours", "365 jours"],
+        "correctAnswer": "24 heures"
+      }
+    ]
+  },
+  {
+    "theme": "Les étoiles et les constellations",
+    "questions": [
+      {
+        "text": "La Voie lactée est une galaxie en forme de spirale.",
+        "type": "vraiFaux",
+        "correctAnswer": "vrai"
+      },
+      {
+        "text": "Quelle étoile est la plus proche de la Terre ?",
+        "type": "choixMultiple",
+        "options": ["Sirius", "Alpha Centauri", "Vega", "Proxima du Centaure"],
+        "correctAnswer": "Proxima du Centaure"
+      },
+      {
+        "text": "Combien d'étoiles composent la constellation de la Grande Ourse ?",
+        "type": "choixMultiple",
+        "options": ["4", "7", "12", "20"],
+        "correctAnswer": "7"
+      },
+      {
+        "text": "Quelle constellation est représentée par un chasseur armé d'un arc ?",
+        "type": "choixMultiple",
+        "options": ["Orion", "Pégase", "Hercule", "Andromède"],
+        "correctAnswer": "Orion"
+      },
+      {
+        "text": "Quelle étoile est connue sous le nom de \"Étoile Polaire\" ?",
+        "type": "choixMultiple",
+        "options": ["Sirius", "Polaris", "Vega", "Betelgeuse"],
+        "correctAnswer": "Polaris"
+      },
+      {
+        "text": "Quelle est la plus brillante étoile de la constellation d'Orion ?",
+        "type": "choixMultiple",
+        "options": ["Rigel", "Bételgeuse", "Aldebaran", "Sirius"],
+        "correctAnswer": "Rigel"
+      },
+      {
+        "text": "Quelle constellation est représentée par un animal mythologique à corps de lion et tête de femme ?",
+        "type": "choixMultiple",
+        "options": ["Lion", "Vierge", "Scorpion", "Balance"],
+        "correctAnswer": "Vierge"
+      },
+      {
+        "text": "Quelle étoile est connue sous le nom de \"Étoile du Berger\" ?",
+        "type": "choixMultiple",
+        "options": ["Sirius", "Vénus", "Altaïr", "Polaris"],
+        "correctAnswer": "Vénus"
+      },
+      {
+        "text": "Quelle étoile est située au centre de notre système solaire ?",
+        "type": "choixMultiple",
+        "options": ["Vénus", "Mars", "Soleil", "Jupiter"],
+        "correctAnswer": "Soleil"
+      },
+      {
+        "text": "Quelle est la plus brillante étoile de la constellation du Cygne ?",
+        "type": "choixMultiple",
+        "options": ["Sirius", "Vega", "Bételgeuse", "Proxima du Centaure"],
+        "correctAnswer": "Vega"
+      }
+    ]
+  },
+  {
+    "theme": "Les missions spatiales historiques",
+    "questions": [
+      {
+        "text": "Quelle est la première femme à avoir voyagé dans l'espace ?",
+        "type": "choixMultiple",
+        "options": [
+          "Valentina Tereshkova",
+          "Sally Ride",
+          "Yuri Gagarin",
+          "Mae Jemison"
+        ],
+        "correctAnswer": "Valentina Tereshkova"
+      },
+      {
+        "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
+        "type": "vraiFaux",
+        "correctAnswer": "faux"
+      },
+      {
+        "text": "Quel astronaute a été le premier à marcher sur la Lune ?",
+        "type": "choixMultiple",
+        "options": [
+          "Neil Armstrong",
+          "Buzz Aldrin",
+          "Yuri Gagarin",
+          "Alan Shepard"
+        ],
+        "correctAnswer": "Neil Armstrong"
+      },
+      {
+        "text": "Quelle mission spatiale a permis de poser le premier homme sur la Lune ?",
+        "type": "choixMultiple",
+        "options": ["Apollo 11", "Vostok 1", "Gemini 7", "Soyouz 1"],
+        "correctAnswer": "Apollo 11"
+      },
+      {
+        "text": "Quelle mission a été la première à envoyer un humain dans l'espace ?",
+        "type": "choixMultiple",
+        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyouz 1"],
+        "correctAnswer": "Vostok 1"
+      },
+      {
+        "text": "Quelle mission spatiale a été la première à atteindre la Lune en orbite ?",
+        "type": "choixMultiple",
+        "options": ["Apollo 8", "Vostok 1", "Gemini 7", "Soyouz 1"],
+        "correctAnswer": "Apollo 8"
+      },
+      {
+        "text": "Quelle mission a été la première à effectuer un rendez-vous spatial entre deux vaisseaux ?",
+        "type": "choixMultiple",
+        "options": [
+          "Gemini 6A et Gemini 7",
+          "Apollo 11 et Apollo 13",
+          "Soyouz 1 et Soyouz 3",
+          "Vostok 1 et Vostok 2"
+        ],
+        "correctAnswer": "Gemini 6A et Gemini 7"
+      },
+      {
+        "text": "Quelle mission spatiale a été la première à envoyer un équipage mixte composé d'hommes et de femmes ?",
+        "type": "choixMultiple",
+        "options": [
+          "Soyouz 4 et Soyouz 5",
+          "Apollo 11 et Apollo 13",
+          "Gemini 6A et Gemini 7",
+          "Vostok 1 et Vostok 2"
+        ],
+        "correctAnswer": "Soyouz 4 et Soyouz 5"
+      },
+      {
+        "text": "Quelle mission spatiale a permis de réaliser le premier amarrage entre un vaisseau spatial américain et un vaisseau spatial soviétique ?",
+        "type": "choixMultiple",
+        "options": [
+          "Apollo 11 et Apollo-Soyouz",
+          "Gemini 6A et Gemini 7",
+          "Soyouz 4 et Soyouz 5",
+          "Vostok 1 et Vostok 2"
+        ],
+        "correctAnswer": "Apollo 11 et Apollo-Soyouz"
+      },
+      {
+        "text": "Quelle mission spatiale a été la première à effectuer un vol habité autour de la Terre ?",
+        "type": "choixMultiple",
+        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyouz 1"],
+        "correctAnswer": "Vostok 1"
+      }
+    ]
+  }
 ]

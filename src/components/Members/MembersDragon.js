@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import "../../styles/Members/Members.css"
+import '../../styles/Members/Members.css';
 
 function Members() {
   const [data, setData] = useState([]);
@@ -30,7 +30,7 @@ function Members() {
       const filtered = data.filter(
         (item) =>
           item.name.toLowerCase().includes(filter.toLowerCase()) ||
-          item.agency.toLowerCase().includes(filter.toLowerCase())
+          item.agency.toLowerCase().includes(filter.toLowerCase()),
       );
       setFilteredData(filtered);
     }
@@ -53,7 +53,7 @@ function Members() {
       </div>
       <div className="members-row">
         {filteredData.map((item) => (
-          <div key={item.id} className='div-member'>
+          <div key={item.id} className="div-member">
             <Link to={`/members/${item.id}`} className="card">
               <p className="card-text">{item.name}</p>
               <img src={item.image} className="card-img-top" alt={item.name} />

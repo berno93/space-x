@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "../../styles/Roadster/Roadster.css"
+import '../../styles/Roadster/Roadster.css';
 
 const RoadsterInfo = () => {
   const [roadsterData, setRoadsterData] = useState(null);
@@ -24,16 +24,17 @@ const RoadsterInfo = () => {
     return <div>Chargement en cours...</div>;
   }
   const roundedSpeed = Math.round(roadsterData.speed_kph * 100) / 100;
-  const roundedDistance = Math.round(roadsterData.earth_distance_km * 100) / 100;
+  const roundedDistance =
+    Math.round(roadsterData.earth_distance_km * 100) / 100;
 
   return (
-    <div className='roadster-div'>
+    <div className="roadster-div">
       <h2 id="title-roadster">{roadsterData.name}</h2>
       {/* <p>Position actuelle : {roadsterData.flickr_images}</p> */}
       <p>Mass : {roadsterData.launch_mass_kg} kg</p>
       <p>Vitesse : {roundedSpeed} km/h</p>
       <p>Distance par rapport à la Terre : {roundedDistance} km</p>
-      <p className='margin'>Longitude : {roadsterData.longitude} °</p>
+      <p className="margin">Longitude : {roadsterData.longitude} °</p>
     </div>
   );
 };
