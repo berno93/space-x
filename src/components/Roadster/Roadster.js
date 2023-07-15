@@ -32,10 +32,12 @@ const RoadsterInfo = () => {
       <div id="div-info-roadster">
         <h2 id="title-roadster">Where is the {roadsterData.name} ?</h2>
         {/* <p>Position actuelle : {roadsterData.flickr_images}</p> */}
-        <p className='p-roadster'>Mass : {roadsterData.launch_mass_kg} kg</p>
-        <p className='p-roadster'>Vitesse : {roundedSpeed} km/h</p>
-        <p className='p-roadster'>Distance par rapport à la Terre : {roundedDistance} km</p>
-        <p className='p-roadster' >Longitude : {roadsterData.longitude} °</p>
+        <p className="p-roadster">Mass : {roadsterData.launch_mass_kg} kg</p>
+        <p className="p-roadster">Vitesse : {roundedSpeed} km/h</p>
+        <p className="p-roadster">
+          Distance par rapport à la Terre : {roundedDistance} km
+        </p>
+        <p className="p-roadster">Longitude : {roadsterData.longitude} °</p>
       </div>
     </div>
   );

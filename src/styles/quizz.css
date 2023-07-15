@@ -1,35 +1,140 @@
-/* h2 {
-    color: wheat;
+.theme-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
+.theme-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.theme-item {
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* ----------------------------------------------Form------------------------------- */
 .Quiz {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.Question form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.error-message {
+  color: red;
 }
 
-.Question label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.answers {
+  display: flex;
+  margin-bottom: 10px;
 }
 
-.Question label input[type="radio"] {
-    margin-right: 5px;
+.answers div {
+  margin-bottom: 5px;
+  margin-inline: 20px;
 }
 
-.Question button {
-    margin-top: 10px;
-    align-self: center;
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid #000000;
+  transition:
+    border-bottom-color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.Quizz #text {
-    color: white;
-} */
+label:hover {
+  border-bottom-color: #007bff;
+  transform: translateY(-3px);
+}
+
+label input[type='checkbox'],
+label input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+label:hover .checkmark {
+  border-color: #fff;
+}
+
+label input[type='checkbox']:checked + .checkmark,
+label input[type='radio']:checked + .checkmark {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+label input[type='checkbox']:checked + .checkmark::after,
+label input[type='radio']:checked + .checkmark::after {
+  display: block;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+}
+
+button {
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+.btn.try-again {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.784);
+  border: none;
+  padding: 10px;
+  transition:
+    transform 0.6s,
+    border-bottom 0.6s;
+}
+
+.btn.try-again:hover {
+  transform: translateY(-5px);
+  border-bottom: 2px solid #007bff;
+}
+
+.theme-item {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.theme-item:hover {
+  color: #007bff;
+}

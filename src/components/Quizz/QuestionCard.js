@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import QuestionsData from '../../data/QuestionsData.json';
 import '../../styles/App.css';
+import '../../styles/quizz.css';
 
 const QuestionCard = ({
   selectedTheme,
-  handleAnswer,
   currentQuestionIndex,
   selectedOption,
   handleChange,
@@ -37,58 +37,63 @@ const QuestionCard = ({
     handleChange(checkedOptions);
   };
 
+  useEffect(() => {
+    if (isAnswerSelected && selectedOption) {
+      handleSubmit();
+    }
+  }, [isAnswerSelected, selectedOption, handleSubmit]);
+
   return (
     <div className="Quiz">
       <h1>{question.text}</h1>
       {errorMessage && <h5 className="error-message">{errorMessage}</h5>}
-      {question.type === 'vraiFaux' && (
-        <form onSubmit={handleSubmit}>
+      {question.type === 'trueFalse' && (
+        <form>
           <div className="answers">
             <div>
-              <label>
+              <label className="checkbox-label">
                 <input
-                  type="radio"
+                  type="checkbox"
                   value="true"
-                  checked={selectedOption === 'true'}
-                  onChange={handleRadioChange}
+                  checked={selectedOption === ['true']}
+                  onChange={handleCheckboxChange}
                 />
-                True
+                <span>True</span>
               </label>
             </div>
             <div>
-              <label>
+              <label className="checkbox-label">
                 <input
-                  type="radio"
+                  type="checkbox"
                   value="false"
-                  checked={selectedOption === 'false'}
-                  onChange={handleRadioChange}
+                  checked={selectedOption === ['false']}
+                  onChange={handleCheckboxChange}
                 />
-                False
+                <span>False</span>
               </label>
             </div>
           </div>
-          <button type="submit">Submit</button>
           <p>Time: {timeLeft} seconds</p>
         </form>
       )}
-      {question.type === 'choixMultiple' && (
-        <form onSubmit={handleSubmit}>
+
+      {question.type === 'multipleChoice' && (
+        <form>
           <div className="answers">
             {question.options.map((option, index) => (
               <div key={index}>
-                <label>
+                <label className="checkbox-label">
                   <input
                     type="checkbox"
                     value={option}
                     checked={selectedOption.includes(option)}
                     onChange={handleCheckboxChange}
                   />
-                  {option}
+                  <span>{option}</span>
                 </label>
               </div>
             ))}
           </div>
-          <button type="submit">Submit</button>
           <p>Time: {timeLeft} seconds</p>
         </form>
       )}

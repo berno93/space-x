@@ -10,7 +10,7 @@ function QuizzApp() {
   const [quizEnded, setQuizEnded] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
   const [timeLeft, setTimeLeft] = useState(60);
-  const [errorMessage, setErrorMessage] = useState();
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleThemeSelection = (theme) => {
     setSelectedTheme(theme);
@@ -25,9 +25,7 @@ function QuizzApp() {
     if (selectedTheme && QuestionsData[selectedTheme]) {
       const themeQuestions = QuestionsData[selectedTheme].questions;
 
-      if (isCorrect) {
-        setScore(score + 1);
-      }
+      setScore((prevScore) => prevScore + (isCorrect ? 1 : 0));
 
       if (currentQuestionIndex + 1 < themeQuestions.length) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -59,17 +57,24 @@ function QuizzApp() {
     setSelectedOption(value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (selectedOption) {
+  const handleSubmit = () => {
+    if (selectedTheme && QuestionsData[selectedTheme]) {
       const themeQuestions = QuestionsData[selectedTheme].questions;
       const question = themeQuestions[currentQuestionIndex];
-      const isCorrect = selectedOption === question.correctAnswer;
+      const isCorrect = selectedOption[0] === question.correctAnswer;
       handleAnswer(isCorrect);
-      setErrorMessage('');
-    } else {
-      setErrorMessage('Please select an answer');
+      console.log('correct answer => ', question.correctAnswer);
+      console.log(' select=> ', selectedOption);
+      console.log(' is correct => ', isCorrect);
+      setSelectedOption('');
+
+      if (currentQuestionIndex + 1 < themeQuestions.length) {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+      } else {
+        setQuizEnded(true);
+      }
+
+      setTimeLeft(60);
     }
   };
 
@@ -99,7 +104,10 @@ function QuizzApp() {
                 {QuestionsData[selectedTheme].questions.length}
               </p>
               <p>{getScorePhrase()}</p>
-              <button onClick={() => handleThemeSelection(null)}>
+              <button
+                className="btn try-again"
+                onClick={() => handleThemeSelection(null)}
+              >
                 Try Again
               </button>
             </div>

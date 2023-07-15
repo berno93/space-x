@@ -1,210 +1,205 @@
 [
   {
-    "theme": "Les planètes du système solaire",
+    "theme": "Planets of the Solar System",
     "questions": [
       {
-        "text": "Quelle est la plus grande planète du système solaire ?",
-        "type": "choixMultiple",
-        "options": ["Mars", "Jupiter", "Vénus", "Neptune"],
+        "text": "What is the largest planet in the solar system?",
+        "type": "multipleChoice",
+        "options": ["Mars", "Jupiter", "Venus", "Neptune"],
         "correctAnswer": "Jupiter"
       },
       {
-        "text": "Combien de planètes composent le système solaire ?",
-        "type": "choixMultiple",
+        "text": "How many planets are there in the solar system?",
+        "type": "multipleChoice",
         "options": ["6", "8", "9", "10"],
         "correctAnswer": "8"
       },
       {
-        "text": "Quelle planète est la plus proche du Soleil ?",
-        "type": "choixMultiple",
-        "options": ["Vénus", "Mercure", "Mars", "Jupiter"],
-        "correctAnswer": "Mercure"
+        "text": "Which planet is the closest to the Sun?",
+        "type": "multipleChoice",
+        "options": ["Venus", "Mercury", "Mars", "Jupiter"],
+        "correctAnswer": "Mercury"
       },
       {
-        "text": "Quelle planète est surnommée la \"planète rouge\" ?",
-        "type": "choixMultiple",
-        "options": ["Vénus", "Mars", "Saturne", "Uranus"],
+        "text": "Which planet is known as the \"Red Planet\"?",
+        "type": "multipleChoice",
+        "options": ["Venus", "Mars", "Saturn", "Uranus"],
         "correctAnswer": "Mars"
       },
       {
-        "text": "Quelle est la plus grande planète du système solaire en termes de diamètre ?",
-        "type": "choixMultiple",
-        "options": ["Jupiter", "Saturne", "Uranus", "Neptune"],
+        "text": "Which planet is the largest in terms of diameter?",
+        "type": "multipleChoice",
+        "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
         "correctAnswer": "Jupiter"
       },
       {
-        "text": "Quelle planète est célèbre pour ses anneaux ?",
-        "type": "choixMultiple",
-        "options": ["Vénus", "Mercure", "Saturne", "Mars"],
-        "correctAnswer": "Saturne"
+        "text": "Which planet is famous for its rings?",
+        "type": "multipleChoice",
+        "options": ["Venus", "Mercury", "Saturn", "Mars"],
+        "correctAnswer": "Saturn"
       },
       {
-        "text": "Quelle planète est la plus éloignée du Soleil ?",
-        "type": "choixMultiple",
-        "options": ["Neptune", "Uranus", "Pluton", "Jupiter"],
+        "text": "Which planet is the farthest from the Sun?",
+        "type": "multipleChoice",
+        "options": ["Neptune", "Uranus", "Pluto", "Jupiter"],
         "correctAnswer": "Neptune"
       },
       {
-        "text": "Quelle planète est la plus petite du système solaire en termes de diamètre ?",
-        "type": "choixMultiple",
-        "options": ["Mercure", "Vénus", "Mars", "Pluton"],
-        "correctAnswer": "Mercure"
+        "text": "Which planet is the smallest in terms of diameter?",
+        "type": "multipleChoice",
+        "options": ["Mercury", "Venus", "Mars", "Pluto"],
+        "correctAnswer": "Mercury"
       },
       {
-        "text": "Quelle planète est connue pour ses tempêtes géantes appelées \"grands taches rouges\" ?",
-        "type": "choixMultiple",
-        "options": ["Mars", "Jupiter", "Saturne", "Uranus"],
+        "text": "Which planet is known for its giant storms called \"Great Red Spots\"?",
+        "type": "multipleChoice",
+        "options": ["Mars", "Jupiter", "Saturn", "Uranus"],
         "correctAnswer": "Jupiter"
       },
       {
-        "text": "Quelle planète est surnommée la \"géante de glace\" ?",
-        "type": "choixMultiple",
-        "options": ["Saturne", "Uranus", "Neptune", "Mars"],
+        "text": "Which planet is nicknamed the \"Ice Giant\"?",
+        "type": "multipleChoice",
+        "options": ["Saturn", "Uranus", "Neptune", "Mars"],
         "correctAnswer": "Uranus"
       }
     ]
   },
   {
-    "theme": "Les phénomènes célestes",
+    "theme": "Celestial Phenomena",
     "questions": [
       {
-        "text": "La Lune est le seul satellite naturel de la Terre.",
-        "type": "vraiFaux",
-        "correctAnswer": "vrai"
+        "text": "The Moon is the only natural satellite of Earth.",
+        "type": "trueFalse",
+        "correctAnswer": "true"
       },
       {
-        "text": "La gravité est plus faible sur Mars que sur la Terre.",
-        "type": "vraiFaux",
-        "correctAnswer": "vrai"
+        "text": "Gravity is weaker on Mars than on Earth.",
+        "type": "trueFalse",
+        "correctAnswer": "true"
       },
       {
-        "text": "La planète Mercure est plus éloignée du Soleil que la planète Vénus.",
-        "type": "vraiFaux",
-        "correctAnswer": "faux"
+        "text": "Mercury is farther from the Sun than Venus.",
+        "type": "trueFalse",
+        "correctAnswer": "false"
       },
       {
-        "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
-        "type": "vraiFaux",
-        "correctAnswer": "faux"
+        "text": "The International Space Station (ISS) orbits around the Moon.",
+        "type": "trueFalse",
+        "correctAnswer": "false"
       },
       {
-        "text": "Quelle est la plus brillante étoile du ciel nocturne ?",
-        "type": "choixMultiple",
-        "options": ["Vénus", "Mars", "Sirius", "Proxima du Centaure"],
+        "text": "What is the brightest star in the night sky?",
+        "type": "multipleChoice",
+        "options": ["Venus", "Mars", "Sirius", "Proxima Centauri"],
         "correctAnswer": "Sirius"
       },
       {
-        "text": "Quel phénomène astronomique se produit lorsqu'un astéroïde entre en collision avec la Terre ?",
-        "type": "choixMultiple",
-        "options": ["Comète", "Éclipse solaire", "Météorite", "Aurore boréale"],
-        "correctAnswer": "Météorite"
+        "text": "What astronomical phenomenon occurs when an asteroid collides with Earth?",
+        "type": "multipleChoice",
+        "options": ["Comet", "Solar Eclipse", "Meteorite", "Aurora Borealis"],
+        "correctAnswer": "Meteorite"
       },
       {
-        "text": "Quelle est la période de révolution de la Terre autour du Soleil ?",
-        "type": "choixMultiple",
-        "options": ["365 jours", "24 heures", "30 jours", "12 mois"],
-        "correctAnswer": "365 jours"
+        "text": "What is the orbital period of Earth around the Sun?",
+        "type": "multipleChoice",
+        "options": ["365 days", "24 hours", "30 days", "12 months"],
+        "correctAnswer": "365 days"
       },
       {
-        "text": "Quel phénomène produit la lumière des étoiles filantes ?",
-        "type": "choixMultiple",
+        "text": "What phenomenon produces the light of shooting stars?",
+        "type": "multipleChoice",
+        "options": ["Combustion", "Nuclear Fusion", "Reflection", "Atmosphere"],
+        "correctAnswer": "Reflection"
+      },
+      {
+        "text": "Which astronomical phenomenon is characterized by a total eclipse of the Sun?",
+        "type": "multipleChoice",
         "options": [
-          "Combustion",
-          "Fusion nucléaire",
-          "Réflexion",
-          "Atmosphère"
+          "Solar Eclipse",
+          "Lunar Eclipse",
+          "Venus Transit",
+          "Annular Eclipse"
         ],
-        "correctAnswer": "Réflexion"
+        "correctAnswer": "Solar Eclipse"
       },
       {
-        "text": "Quel phénomène astronomique est caractérisé par une éclipse totale du Soleil ?",
-        "type": "choixMultiple",
-        "options": [
-          "Éclipse solaire",
-          "Éclipse lunaire",
-          "Transit de Vénus",
-          "Éclipse annulaire"
-        ],
-        "correctAnswer": "Éclipse solaire"
-      },
-      {
-        "text": "Quelle est la durée moyenne d'une journée sur Terre ?",
-        "type": "choixMultiple",
-        "options": ["24 heures", "12 heures", "30 jours", "365 jours"],
-        "correctAnswer": "24 heures"
+        "text": "What is the average duration of a day on Earth?",
+        "type": "multipleChoice",
+        "options": ["24 hours", "12 hours", "30 days", "365 days"],
+        "correctAnswer": "24 hours"
       }
     ]
   },
   {
-    "theme": "Les étoiles et les constellations",
+    "theme": "Stars and Constellations",
     "questions": [
       {
-        "text": "La Voie lactée est une galaxie en forme de spirale.",
-        "type": "vraiFaux",
-        "correctAnswer": "vrai"
+        "text": "The Milky Way is a spiral-shaped galaxy.",
+        "type": "trueFalse",
+        "correctAnswer": "true"
       },
       {
-        "text": "Quelle étoile est la plus proche de la Terre ?",
-        "type": "choixMultiple",
-        "options": ["Sirius", "Alpha Centauri", "Vega", "Proxima du Centaure"],
-        "correctAnswer": "Proxima du Centaure"
+        "text": "Which star is closest to Earth?",
+        "type": "multipleChoice",
+        "options": ["Sirius", "Alpha Centauri", "Vega", "Proxima Centauri"],
+        "correctAnswer": "Proxima Centauri"
       },
       {
-        "text": "Combien d'étoiles composent la constellation de la Grande Ourse ?",
-        "type": "choixMultiple",
+        "text": "How many stars are there in the Ursa Major constellation?",
+        "type": "multipleChoice",
         "options": ["4", "7", "12", "20"],
         "correctAnswer": "7"
       },
       {
-        "text": "Quelle constellation est représentée par un chasseur armé d'un arc ?",
-        "type": "choixMultiple",
-        "options": ["Orion", "Pégase", "Hercule", "Andromède"],
+        "text": "Which constellation is represented by a hunter holding a bow?",
+        "type": "multipleChoice",
+        "options": ["Orion", "Pegasus", "Hercules", "Andromeda"],
         "correctAnswer": "Orion"
       },
       {
-        "text": "Quelle étoile est connue sous le nom de \"Étoile Polaire\" ?",
-        "type": "choixMultiple",
+        "text": "Which star is known as the \"Pole Star\"?",
+        "type": "multipleChoice",
         "options": ["Sirius", "Polaris", "Vega", "Betelgeuse"],
         "correctAnswer": "Polaris"
       },
       {
-        "text": "Quelle est la plus brillante étoile de la constellation d'Orion ?",
-        "type": "choixMultiple",
-        "options": ["Rigel", "Bételgeuse", "Aldebaran", "Sirius"],
+        "text": "What is the brightest star in the constellation of Orion?",
+        "type": "multipleChoice",
+        "options": ["Rigel", "Betelgeuse", "Aldebaran", "Sirius"],
         "correctAnswer": "Rigel"
       },
       {
-        "text": "Quelle constellation est représentée par un animal mythologique à corps de lion et tête de femme ?",
-        "type": "choixMultiple",
-        "options": ["Lion", "Vierge", "Scorpion", "Balance"],
-        "correctAnswer": "Vierge"
+        "text": "Which constellation is represented by a mythological creature with the body of a lion and the head of a woman?",
+        "type": "multipleChoice",
+        "options": ["Leo", "Virgo", "Scorpius", "Libra"],
+        "correctAnswer": "Virgo"
       },
       {
-        "text": "Quelle étoile est connue sous le nom de \"Étoile du Berger\" ?",
-        "type": "choixMultiple",
-        "options": ["Sirius", "Vénus", "Altaïr", "Polaris"],
-        "correctAnswer": "Vénus"
+        "text": "Which star is known as the \"Morning Star\"?",
+        "type": "multipleChoice",
+        "options": ["Sirius", "Venus", "Altair", "Polaris"],
+        "correctAnswer": "Venus"
       },
       {
-        "text": "Quelle étoile est située au centre de notre système solaire ?",
-        "type": "choixMultiple",
-        "options": ["Vénus", "Mars", "Soleil", "Jupiter"],
-        "correctAnswer": "Soleil"
+        "text": "Which star is located at the center of our solar system?",
+        "type": "multipleChoice",
+        "options": ["Venus", "Mars", "Sun", "Jupiter"],
+        "correctAnswer": "Sun"
       },
       {
-        "text": "Quelle est la plus brillante étoile de la constellation du Cygne ?",
-        "type": "choixMultiple",
-        "options": ["Sirius", "Vega", "Bételgeuse", "Proxima du Centaure"],
+        "text": "What is the brightest star in the Cygnus constellation?",
+        "type": "multipleChoice",
+        "options": ["Sirius", "Vega", "Betelgeuse", "Proxima Centauri"],
         "correctAnswer": "Vega"
       }
     ]
   },
   {
-    "theme": "Les missions spatiales historiques",
+    "theme": "Historical Space Missions",
     "questions": [
       {
-        "text": "Quelle est la première femme à avoir voyagé dans l'espace ?",
-        "type": "choixMultiple",
+        "text": "Who was the first woman to travel to space?",
+        "type": "multipleChoice",
         "options": [
           "Valentina Tereshkova",
           "Sally Ride",
@@ -214,13 +209,13 @@
         "correctAnswer": "Valentina Tereshkova"
       },
       {
-        "text": "La Station spatiale internationale (ISS) orbite autour de la Lune.",
-        "type": "vraiFaux",
-        "correctAnswer": "faux"
+        "text": "The International Space Station (ISS) orbits around the Moon.",
+        "type": "trueFalse",
+        "correctAnswer": "false"
       },
       {
-        "text": "Quel astronaute a été le premier à marcher sur la Lune ?",
-        "type": "choixMultiple",
+        "text": "Which astronaut was the first to walk on the Moon?",
+        "type": "multipleChoice",
         "options": [
           "Neil Armstrong",
           "Buzz Aldrin",
@@ -230,60 +225,60 @@
         "correctAnswer": "Neil Armstrong"
       },
       {
-        "text": "Quelle mission spatiale a permis de poser le premier homme sur la Lune ?",
-        "type": "choixMultiple",
-        "options": ["Apollo 11", "Vostok 1", "Gemini 7", "Soyouz 1"],
+        "text": "Which space mission successfully landed the first human on the Moon?",
+        "type": "multipleChoice",
+        "options": ["Apollo 11", "Vostok 1", "Gemini 7", "Soyuz 1"],
         "correctAnswer": "Apollo 11"
       },
       {
-        "text": "Quelle mission a été la première à envoyer un humain dans l'espace ?",
-        "type": "choixMultiple",
-        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyouz 1"],
+        "text": "Which mission was the first to send a human into space?",
+        "type": "multipleChoice",
+        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyuz 1"],
         "correctAnswer": "Vostok 1"
       },
       {
-        "text": "Quelle mission spatiale a été la première à atteindre la Lune en orbite ?",
-        "type": "choixMultiple",
-        "options": ["Apollo 8", "Vostok 1", "Gemini 7", "Soyouz 1"],
+        "text": "Which space mission was the first to orbit the Moon?",
+        "type": "multipleChoice",
+        "options": ["Apollo 8", "Vostok 1", "Gemini 7", "Soyuz 1"],
         "correctAnswer": "Apollo 8"
       },
       {
-        "text": "Quelle mission a été la première à effectuer un rendez-vous spatial entre deux vaisseaux ?",
-        "type": "choixMultiple",
+        "text": "Which mission was the first to perform a space rendezvous between two spacecraft?",
+        "type": "multipleChoice",
         "options": [
-          "Gemini 6A et Gemini 7",
-          "Apollo 11 et Apollo 13",
-          "Soyouz 1 et Soyouz 3",
-          "Vostok 1 et Vostok 2"
+          "Gemini 6A and Gemini 7",
+          "Apollo 11 and Apollo 13",
+          "Soyuz 1 and Soyuz 3",
+          "Vostok 1 and Vostok 2"
         ],
-        "correctAnswer": "Gemini 6A et Gemini 7"
+        "correctAnswer": "Gemini 6A and Gemini 7"
       },
       {
-        "text": "Quelle mission spatiale a été la première à envoyer un équipage mixte composé d'hommes et de femmes ?",
-        "type": "choixMultiple",
+        "text": "Which space mission was the first to send a mixed-gender crew of men and women?",
+        "type": "multipleChoice",
         "options": [
-          "Soyouz 4 et Soyouz 5",
-          "Apollo 11 et Apollo 13",
-          "Gemini 6A et Gemini 7",
-          "Vostok 1 et Vostok 2"
+          "Soyuz 4 and Soyuz 5",
+          "Apollo 11 and Apollo 13",
+          "Gemini 6A and Gemini 7",
+          "Vostok 1 and Vostok 2"
         ],
-        "correctAnswer": "Soyouz 4 et Soyouz 5"
+        "correctAnswer": "Soyuz 4 and Soyuz 5"
       },
       {
-        "text": "Quelle mission spatiale a permis de réaliser le premier amarrage entre un vaisseau spatial américain et un vaisseau spatial soviétique ?",
-        "type": "choixMultiple",
+        "text": "Which space mission accomplished the first docking between an American spacecraft and a Soviet spacecraft?",
+        "type": "multipleChoice",
         "options": [
-          "Apollo 11 et Apollo-Soyouz",
-          "Gemini 6A et Gemini 7",
-          "Soyouz 4 et Soyouz 5",
-          "Vostok 1 et Vostok 2"
+          "Apollo 11 and Apollo-Soyuz",
+          "Gemini 6A and Gemini 7",
+          "Soyuz 4 and Soyuz 5",
+          "Vostok 1 and Vostok 2"
         ],
-        "correctAnswer": "Apollo 11 et Apollo-Soyouz"
+        "correctAnswer": "Apollo 11 and Apollo-Soyuz"
       },
       {
-        "text": "Quelle mission spatiale a été la première à effectuer un vol habité autour de la Terre ?",
-        "type": "choixMultiple",
-        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyouz 1"],
+        "text": "Which space mission was the first to perform a manned spaceflight around Earth?",
+        "type": "multipleChoice",
+        "options": ["Vostok 1", "Apollo 11", "Gemini 7", "Soyuz 1"],
         "correctAnswer": "Vostok 1"
       }
     ]

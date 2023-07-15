@@ -22,12 +22,9 @@ function Members() {
   }, []);
 
   useEffect(() => {
-    // Appliquer le filtre lorsque le filtre ou les données changent
     if (filter.trim() === '') {
-      // Si le filtre est vide, afficher toutes les données
       setFilteredData(data);
     } else {
-      // Appliquer le filtre en fonction du nom du membre ou de son agence
       const filtered = data.filter(
         (item) =>
           item.name.toLowerCase().includes(filter.toLowerCase()) ||
