@@ -10,7 +10,7 @@ import HistoryDetails from '../components/Articles/HistoryDetails';
 import InfoSpaceX from '../components/InfoSpaceX/InfoSpaceX';
 import LastLaunchInfo from '../components/Dernier_Lancement/Last_launch';
 import RoadsterInfo from '../components/Roadster/Roadster';
-import QuizzPage from '../components/Quizz/Quizz';
+import QuizzApp from '../components/Quizz/QuizzApp';
 
 const Routeur = () => {
   return (
@@ -24,7 +24,7 @@ const Routeur = () => {
           <Route path="/history/:id" element={<HistoryDetails />} />
           <Route exact path="/members" element={<Members />} />
           <Route exact path="/members/:id" element={<MemberDetails />} />
-          <Route exact path="/quizz" element={<QuizzPage />} />
+          <Route exact path="/quizz" element={<QuizzApp />} />
           <Route exact path="/last_lauch/" element={<LastLaunchInfo />} />
           <Route exact path="/roadster/" element={<RoadsterInfo />} />
           <Route component={NoMatch} />

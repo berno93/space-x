@@ -240,3 +240,17 @@ body {
 .Question p {
   margin-top: 10px;
 }
+
+.Quiz #text {
+  color: white;
+}
+
+.Quiz .answers {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 40px;
+}
+
+.Quiz .error-message {
+  color: rgb(202, 89, 28);
+}
