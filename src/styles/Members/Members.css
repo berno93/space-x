@@ -23,3 +23,8 @@
 .members-container .card:hover {
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
+
+input {
+  color: #212529;
+  border-radius: 10px;
+}
