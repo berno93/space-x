@@ -28,6 +28,10 @@
   margin-bottom: 20px;
 }
 
+.article-details .card {
+  width: 70vw;
+}
+
 .articles-container .card-header div {
   width: 50%;
   height: 100%;
